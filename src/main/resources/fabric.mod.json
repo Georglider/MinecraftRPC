@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "mcrpc",
+  "version": "${version}",
+
+  "name": "Discord MCRPC",
+  "description": "Easy & Flexible integration of Discord Rich Presence into Minecraft!",
+  "authors": [
+    "Georglider"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/mcrpc/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "georglider.mcrpc.Main"
+    ]
+  },
+  "mixins": [
+    "mcrpc.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.10.0",
+    "fabric": "*",
+    "minecraft": "*",
+    "java": ">=17"
+  }
+}
